@@ -1,0 +1,267 @@
+/* 导入的两个字体 */
+@font-face{
+	font-family: 'history';
+	src:url(../font/history/genkai-mincho-2.ttf);
+}
+@font-face{
+	font-family: 'thumb';
+	src:url(../font/thumb/鸿雷板书简体-正式版.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 列表都没有修饰 */
+ul,ol{
+	list-style: none;
+}
+
+/* 超链接都没线 */
+a{
+	text-decoration: none;
+}
+
+/* 标题横幅参数设置 */
+.header img{
+	width: 100%;
+	margin: 0 auto;
+	height:100%;
+}
+
+/* 导航栏 */
+.menu{
+	height: 50px;
+	background-color: rgba(250,235,215,0.4);
+	margin: 0;
+}
+
+/* menu-content是导航的内容 */
+.menu-content{
+	padding-left: 250px;
+}
+
+/* 导航栏左侧内容设置 */
+.menu-left li{
+	float: left;
+	margin: 0 0;
+}
+
+/* 对应超链接属性 */
+.menu-left li a{
+	color: rgb(	185,15,23);
+	font-size: 17px;
+	font-weight: 600;
+	display: block;
+	height: 50px;
+	padding: 0 20px;
+	line-height: 50px;
+	text-align: center;
+}
+
+/* 对应超链接属性 */
+.menu-left li a:hover{
+	background-color: rgb(185,15,23);
+	color: rgba(250,235,215,1);
+}
+
+/* 导航栏右边注册登录按钮 */
+.menu-right{
+	margin-right: 300px;
+}
+
+.menu-right ul {
+	float: right;
+}
+
+.menu-right li {
+	float: left;
+	margin: 5px 15px;
+}
+
+/* 注册按钮 */
+.enroll_botton{
+	display: block;
+	background-color: rgb(185,15,23);
+ 	width: 50px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: 600;
+	color: rgba(250,235,215,1);
+}
+
+/* 登录按钮 */
+.login_botton{
+	display: block;
+	background-color: rgb(185,15,23);
+	width: 100px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: 600;
+	color: rgba(250,235,215,1);
+}
+
+/* 时间线区属性 */
+.timeline{
+	position: relative;
+	width: 1200px;
+	height: 150%;
+	margin: 15px auto;
+	/*padding-bottom: 30px;*/
+	background-image: url(../img/时间线背景图.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	box-shadow: 5px 5px 9px 3px #bfbfbf;
+}
+
+/* 革命英雄人物区 */
+.character {
+	width:1200px;
+	height: 100%;
+	margin: 15px auto;
+	padding-bottom: 30px;
+	background-image: url(../img/革命英雄背景图.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover; /*477.6px 100% 505px*/
+	border-radius: 10px;
+	box-shadow: 5px 5px 9px 3px #bfbfbf;
+	position: relative;
+}
+
+ /* 块标题是一个PNG,subtitle用来定大小 */
+.subtitle2{
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+
+/* 人物图像行 */
+.picturerow ul{
+	float: left;
+}
+
+.picturerow li{
+	float: right;
+	padding: 0 50px;
+}
+
+.picturerow img{
+	width:200px;
+	height:120px;
+}
+
+/* 人物图像对应姓名行 */
+.namerow{
+	width:1200px;
+}
+.namerow ul{
+	float:left;
+}
+
+.namerow li{
+	float:right;
+	display: block;
+	text-align: center;
+	width: 162px;
+	margin: 0 69px 15px 69px;
+}
+
+.namerow a{
+	color: black;
+	font-size: 18px;
+	font-weight: 200;
+	font-family: "thumb", serif;
+}
+
+/* 纪录片区属性 */
+.video{
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin: 15px auto;
+	padding-bottom: 30px;
+	background-image: url(../img/经典影视背景图.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; /*477.6px 100% 505px*/
+	border-radius: 10px;
+	box-shadow: 5px 5px 9px 3px #bfbfbf;
+}
+
+/* 音乐区同理 */
+.music{
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin: 15px auto;
+	padding-bottom: 10px;
+	background-image: url(../img/红色歌曲背景图.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; /*477.6px 100% 505px*/
+	border-radius: 10px;
+	box-shadow: 5px 5px 9px 3px #bfbfbf;
+}
+
+/* 这行是视频的展示行 */
+.videorow ul{
+	float: left;
+}
+
+.videorow li{
+	float: right;
+	padding: 0 25px;
+}
+
+/* 纪录片对应姓名行 */
+.videonamerow{
+	width: 1200px;
+}
+
+.videonamerow ul{
+	float: left;
+}
+
+.videonamerow li{
+	float: right;
+	display: block;
+	width: 144px;
+	margin: 0 78px;
+	text-align: center;
+}
+
+.videonamerow a{
+	color: black;
+	font-size: 18px;
+	font-weight: 200;
+	font-family: "thumb", serif;
+}
+
+.musicrow{
+	width: 1200px;
+	margin: 5px auto 100px 50px;
+}
+
+.musicrow li{
+	display: block;
+	height: 24px;
+	margin: 10px auto;
+}
+
+.musicrow a{
+	color: #e7e7e7;
+	font-size: 22px;
+	font-weight: 200;
+	font-family: "thumb", serif;
+}
+
+/* 用于页面整体背景颜色 */
+.body{
+	background-color: #d9d9d9;
+	background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,1714 @@
+{
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "02a10aed-2d6a-4980-afc6-6863063a211a",
+    "name": "web-design"
+  },
+  "item": [
+    {
+      "name": "留言接口",
+      "item": [
+        {
+          "name": "分页查询留言",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "page",
+                  "type": "text",
+                  "description": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "type": "text",
+                  "description": "size",
+                  "value": "5"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/comment/page?page\u003d1\u0026size\u003d5",
+              "protocol": "http",
+              "path": [
+                "comment",
+                "page"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "page"
+                },
+                {
+                  "key": "size",
+                  "value": "5",
+                  "description": "size"
+                }
+              ],
+              "variable": []
+            },
+            "description": "分页查询留言",
+            "header": []
+          },
+          "description": "分页查询留言"
+        },
+        {
+          "name": "获取所有留言",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/comment/all",
+              "protocol": "http",
+              "path": [
+                "comment",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有留言",
+            "header": []
+          },
+          "description": "获取所有留言"
+        },
+        {
+          "name": "根据用户 id 获取留言",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "authorId",
+                  "type": "text",
+                  "description": "authorId",
+                  "value": "647"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/comment/id?authorId\u003d647",
+              "protocol": "http",
+              "path": [
+                "comment",
+                "id"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "authorId",
+                  "value": "563",
+                  "description": "authorId"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据用户 id 获取留言",
+            "header": []
+          },
+          "description": "根据用户 id 获取留言"
+        },
+        {
+          "name": "根据用户名获取留言",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "username",
+                  "type": "text",
+                  "description": "username",
+                  "value": "dolores.baumbach"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/comment/name?username\u003ddolores.baumbach",
+              "protocol": "http",
+              "path": [
+                "comment",
+                "name"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "username",
+                  "value": "dolores.baumbach",
+                  "description": "username"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据用户名获取留言",
+            "header": []
+          },
+          "description": "根据用户名获取留言"
+        },
+        {
+          "name": "根据 id 获取留言",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "id",
+                  "value": "82"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/comment/?id\u003d82",
+              "protocol": "http",
+              "path": [
+                "comment",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "849",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 获取留言",
+            "header": []
+          },
+          "description": "根据 id 获取留言"
+        },
+        {
+          "name": "添加留言",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"f760ph\",\n  \"username\": \"dolores.baumbach\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/comment/",
+              "protocol": "http",
+              "path": [
+                "comment",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加留言",
+            "header": []
+          },
+          "description": "添加留言"
+        },
+        {
+          "name": "删除留言",
+          "request": {
+            "method": "DELETE",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://localhost:8088/comment/985",
+              "protocol": "http",
+              "path": [
+                "comment",
+                ":id"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "458",
+                  "description": "id"
+                }
+              ]
+            },
+            "description": "删除留言",
+            "header": []
+          },
+          "description": "删除留言"
+        }
+      ]
+    },
+    {
+      "name": "事件接口",
+      "item": [
+        {
+          "name": "分页获取事件",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "page",
+                  "type": "text",
+                  "description": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "type": "text",
+                  "description": "size",
+                  "value": "5"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/event/page?page\u003d1\u0026size\u003d5",
+              "protocol": "http",
+              "path": [
+                "event",
+                "page"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "page"
+                },
+                {
+                  "key": "size",
+                  "value": "5",
+                  "description": "size"
+                }
+              ],
+              "variable": []
+            },
+            "description": "分页获取事件",
+            "header": []
+          },
+          "description": "分页获取事件"
+        },
+        {
+          "name": "获取所有事件",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/event/all",
+              "protocol": "http",
+              "path": [
+                "event",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有事件",
+            "header": []
+          },
+          "description": "获取所有事件"
+        },
+        {
+          "name": "根据 id 获取事件",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "id",
+                  "value": "163"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/event/?id\u003d163",
+              "protocol": "http",
+              "path": [
+                "event",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "646",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 获取事件",
+            "header": []
+          },
+          "description": "根据 id 获取事件"
+        },
+        {
+          "name": "添加事件",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 275,\n  \"name\": \"dolores.baumbach\",\n  \"time\": \"2021-12-02 13:07:53\",\n  \"location\": \"dw3i3u\",\n  \"introduction\": \"j0gte4\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/event/",
+              "protocol": "http",
+              "path": [
+                "event",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加事件",
+            "header": []
+          },
+          "description": "添加事件"
+        },
+        {
+          "name": "根据 id 更新事件",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 590,\n  \"name\": \"dolores.baumbach\",\n  \"time\": \"2021-12-02 13:07:53\",\n  \"location\": \"yqdsvy\",\n  \"introduction\": \"ny31oi\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/event/?id\u003d584",
+              "protocol": "http",
+              "path": [
+                "event",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "41",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 更新事件",
+            "header": []
+          },
+          "description": "根据 id 更新事件"
+        },
+        {
+          "name": "删除事件",
+          "request": {
+            "method": "DELETE",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://localhost:8088/event/731",
+              "protocol": "http",
+              "path": [
+                "event",
+                ":id"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "565",
+                  "description": "id"
+                }
+              ]
+            },
+            "description": "删除事件",
+            "header": []
+          },
+          "description": "删除事件"
+        }
+      ]
+    },
+    {
+      "name": "文件接口",
+      "item": [
+        {
+          "name": "文件上传",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "description": "file",
+                  "value": ""
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/file/upload",
+              "protocol": "http",
+              "path": [
+                "file",
+                "upload"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "file",
+                  "value": "",
+                  "description": "file"
+                }
+              ],
+              "variable": []
+            },
+            "description": "文件上传",
+            "header": []
+          },
+          "description": "文件上传"
+        }
+      ]
+    },
+    {
+      "name": "登录接口",
+      "item": [
+        {
+          "name": "登录",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"dolores.baumbach\",\n  \"password\": \"gv925g\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/admin/login",
+              "protocol": "http",
+              "path": [
+                "admin",
+                "login"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "登录",
+            "header": []
+          },
+          "description": "登录"
+        },
+        {
+          "name": "验证是否登录",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "username",
+                  "type": "text",
+                  "description": "username",
+                  "value": "dolores.baumbach"
+                },
+                {
+                  "key": "tokenValue",
+                  "type": "text",
+                  "description": "token",
+                  "value": "a1r9kr"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/admin/check?tokenValue\u003da1r9kr\u0026username\u003ddolores.baumbach",
+              "protocol": "http",
+              "path": [
+                "admin",
+                "check"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "username",
+                  "value": "dolores.baumbach",
+                  "description": "username"
+                },
+                {
+                  "key": "tokenValue",
+                  "value": "ij2v2d",
+                  "description": "token"
+                }
+              ],
+              "variable": []
+            },
+            "description": "验证是否登录",
+            "header": []
+          },
+          "description": "验证是否登录"
+        },
+        {
+          "name": "注销",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "tokenValue",
+                  "type": "text",
+                  "description": "token",
+                  "value": "e0rrlr"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/admin/logout",
+              "protocol": "http",
+              "path": [
+                "admin",
+                "logout"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "tokenValue",
+                  "value": "03prv7",
+                  "description": "token"
+                }
+              ],
+              "variable": []
+            },
+            "description": "注销",
+            "header": []
+          },
+          "description": "注销"
+        },
+        {
+          "name": "注册",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"dolores.baumbach\",\n  \"password\": \"w5ujic\",\n  \"passwordRepeat\": \"qsb8zj\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/admin/register",
+              "protocol": "http",
+              "path": [
+                "admin",
+                "register"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "注册",
+            "header": []
+          },
+          "description": "注册"
+        }
+      ]
+    },
+    {
+      "name": "音乐接口",
+      "item": [
+        {
+          "name": "分页获取音乐",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "page",
+                  "type": "text",
+                  "description": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "type": "text",
+                  "description": "size",
+                  "value": "5"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/music/page?page\u003d1\u0026size\u003d5",
+              "protocol": "http",
+              "path": [
+                "music",
+                "page"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "page"
+                },
+                {
+                  "key": "size",
+                  "value": "5",
+                  "description": "size"
+                }
+              ],
+              "variable": []
+            },
+            "description": "分页获取音乐",
+            "header": []
+          },
+          "description": "分页获取音乐"
+        },
+        {
+          "name": "获取所有音乐",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/music/all",
+              "protocol": "http",
+              "path": [
+                "music",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有音乐",
+            "header": []
+          },
+          "description": "获取所有音乐"
+        },
+        {
+          "name": "根据 id 获取音乐",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "id",
+                  "value": "951"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/music/?id\u003d951",
+              "protocol": "http",
+              "path": [
+                "music",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "292",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 获取音乐",
+            "header": []
+          },
+          "description": "根据 id 获取音乐"
+        },
+        {
+          "name": "添加音乐",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 855,\n  \"name\": \"dolores.baumbach\",\n  \"author\": \"Kathyrn Schaden\",\n  \"link\": \"pzuixm\",\n  \"background\": \"pb71c0\",\n  \"appreciation\": \"cn7lut\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/music/",
+              "protocol": "http",
+              "path": [
+                "music",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加音乐",
+            "header": []
+          },
+          "description": "添加音乐"
+        },
+        {
+          "name": "根据 id 更新音乐",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 47,\n  \"name\": \"dolores.baumbach\",\n  \"author\": \"Kathyrn Schaden\",\n  \"link\": \"m12058\",\n  \"background\": \"zhvebq\",\n  \"appreciation\": \"q6f2yn\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/music/?id\u003d587",
+              "protocol": "http",
+              "path": [
+                "music",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "967",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 更新音乐",
+            "header": []
+          },
+          "description": "根据 id 更新音乐"
+        },
+        {
+          "name": "删除音乐",
+          "request": {
+            "method": "DELETE",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://localhost:8088/music/215",
+              "protocol": "http",
+              "path": [
+                "music",
+                ":id"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "338",
+                  "description": "id"
+                }
+              ]
+            },
+            "description": "删除音乐",
+            "header": []
+          },
+          "description": "删除音乐"
+        }
+      ]
+    },
+    {
+      "name": "人物接口",
+      "item": [
+        {
+          "name": "分页获取人物",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "page",
+                  "type": "text",
+                  "description": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "type": "text",
+                  "description": "size",
+                  "value": "5"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/people/page?page\u003d1\u0026size\u003d5",
+              "protocol": "http",
+              "path": [
+                "people",
+                "page"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "page"
+                },
+                {
+                  "key": "size",
+                  "value": "5",
+                  "description": "size"
+                }
+              ],
+              "variable": []
+            },
+            "description": "分页获取人物",
+            "header": []
+          },
+          "description": "分页获取人物"
+        },
+        {
+          "name": "获取所有人物",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/people/all",
+              "protocol": "http",
+              "path": [
+                "people",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有人物",
+            "header": []
+          },
+          "description": "获取所有人物"
+        },
+        {
+          "name": "根据 id 获取人物",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "id",
+                  "value": "590"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/people/?id\u003d590",
+              "protocol": "http",
+              "path": [
+                "people",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "811",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 获取人物",
+            "header": []
+          },
+          "description": "根据 id 获取人物"
+        },
+        {
+          "name": "添加人物",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 569,\n  \"name\": \"dolores.baumbach\",\n  \"picture\": \"izs5y3\",\n  \"introduction\": \"7jucf8\",\n  \"mention\": \"dn1ec9\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/people/",
+              "protocol": "http",
+              "path": [
+                "people",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加人物",
+            "header": []
+          },
+          "description": "添加人物"
+        },
+        {
+          "name": "根据 id 更新人物",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 289,\n  \"name\": \"dolores.baumbach\",\n  \"picture\": \"o649nw\",\n  \"introduction\": \"wqhajc\",\n  \"mention\": \"zoi2kz\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/people/?id\u003d94",
+              "protocol": "http",
+              "path": [
+                "people",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "385",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 更新人物",
+            "header": []
+          },
+          "description": "根据 id 更新人物"
+        },
+        {
+          "name": "删除人物",
+          "request": {
+            "method": "DELETE",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://localhost:8088/people/647",
+              "protocol": "http",
+              "path": [
+                "people",
+                ":id"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "272",
+                  "description": "id"
+                }
+              ]
+            },
+            "description": "删除人物",
+            "header": []
+          },
+          "description": "删除人物"
+        }
+      ]
+    },
+    {
+      "name": "权限接口",
+      "item": [
+        {
+          "name": "获取所有权限",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/permission/all",
+              "protocol": "http",
+              "path": [
+                "permission",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有权限",
+            "header": []
+          },
+          "description": "获取所有权限"
+        },
+        {
+          "name": "添加权限",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 875,\n  \"permission\": \"2c2g0r\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/permission/",
+              "protocol": "http",
+              "path": [
+                "permission",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加权限",
+            "header": []
+          },
+          "description": "添加权限"
+        }
+      ]
+    },
+    {
+      "name": "角色接口",
+      "item": [
+        {
+          "name": "获取所有角色",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/role/all",
+              "protocol": "http",
+              "path": [
+                "role",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有角色",
+            "header": []
+          },
+          "description": "获取所有角色"
+        },
+        {
+          "name": "添加角色",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 275,\n  \"role\": \"m10pmr\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/role/",
+              "protocol": "http",
+              "path": [
+                "role",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加角色",
+            "header": []
+          },
+          "description": "添加角色"
+        },
+        {
+          "name": "添加角色权限",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 861,\n  \"role\": \"8ehhb6\",\n  \"permission\": \"0sna8l\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/role/permission",
+              "protocol": "http",
+              "path": [
+                "role",
+                "permission"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加角色权限",
+            "header": []
+          },
+          "description": "添加角色权限"
+        }
+      ]
+    },
+    {
+      "name": "用户接口",
+      "item": [
+        {
+          "name": "获取所有用户",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/all",
+              "protocol": "http",
+              "path": [
+                "user",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有用户",
+            "header": []
+          },
+          "description": "获取所有用户"
+        },
+        {
+          "name": "根据 id 获取用户",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "id",
+                  "value": "270"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/?id\u003d270",
+              "protocol": "http",
+              "path": [
+                "user",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "31",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 获取用户",
+            "header": []
+          },
+          "description": "根据 id 获取用户"
+        },
+        {
+          "name": "根据用户名获取用户",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "username",
+                  "type": "text",
+                  "description": "username",
+                  "value": "dolores.baumbach"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/name?username\u003ddolores.baumbach",
+              "protocol": "http",
+              "path": [
+                "user",
+                "name"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "username",
+                  "value": "dolores.baumbach",
+                  "description": "username"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据用户名获取用户",
+            "header": []
+          },
+          "description": "根据用户名获取用户"
+        },
+        {
+          "name": "获取所有用户和角色",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/role",
+              "protocol": "http",
+              "path": [
+                "user",
+                "role"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有用户和角色",
+            "header": []
+          },
+          "description": "获取所有用户和角色"
+        },
+        {
+          "name": "添加用户",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 83,\n  \"username\": \"dolores.baumbach\",\n  \"password\": \"oi8tcq\",\n  \"avatar\": \"cx5stl\",\n  \"token\": \"9ctif4\",\n  \"email\": \"zella.mueller@yahoo.com\",\n  \"description\": \"a72pul\",\n  \"location\": \"675ips\",\n  \"education\": \"t4n9hw\",\n  \"profile\": \"6ksrhi\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/",
+              "protocol": "http",
+              "path": [
+                "user",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "添加用户",
+            "header": []
+          },
+          "description": "添加用户"
+        },
+        {
+          "name": "根据 id 更新用户",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 456,\n  \"username\": \"dolores.baumbach\",\n  \"password\": \"bc3kv3\",\n  \"avatar\": \"zoacre\",\n  \"token\": \"fi0vuy\",\n  \"email\": \"zella.mueller@yahoo.com\",\n  \"description\": \"p7envu\",\n  \"location\": \"rc1ooy\",\n  \"education\": \"2khi4i\",\n  \"profile\": \"clul33\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/?id\u003d444",
+              "protocol": "http",
+              "path": [
+                "user",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "774",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 更新用户",
+            "header": []
+          },
+          "description": "根据 id 更新用户"
+        },
+        {
+          "name": "根据用户名更新用户",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 692,\n  \"username\": \"dolores.baumbach\",\n  \"password\": \"2hc557\",\n  \"avatar\": \"r6rkwp\",\n  \"token\": \"zalatf\",\n  \"email\": \"zella.mueller@yahoo.com\",\n  \"description\": \"4ar7cc\",\n  \"location\": \"fmouzu\",\n  \"education\": \"yw6ipb\",\n  \"profile\": \"2o7w6i\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/name?username\u003ddolores.baumbach",
+              "protocol": "http",
+              "path": [
+                "user",
+                "name"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "username",
+                  "value": "dolores.baumbach",
+                  "description": "username"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据用户名更新用户",
+            "header": []
+          },
+          "description": "根据用户名更新用户"
+        },
+        {
+          "name": "根据 id 更新用户头像",
+          "request": {
+            "method": "PUT",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "id",
+                  "value": "478"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "description": "file",
+                  "value": ""
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/avatar",
+              "protocol": "http",
+              "path": [
+                "user",
+                "avatar"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "128",
+                  "description": "id"
+                },
+                {
+                  "key": "file",
+                  "value": "",
+                  "description": "file"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 更新用户头像",
+            "header": []
+          },
+          "description": "根据 id 更新用户头像"
+        },
+        {
+          "name": "删除用户",
+          "request": {
+            "method": "DELETE",
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://localhost:8088/user/187",
+              "protocol": "http",
+              "path": [
+                "user",
+                ":id"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "116",
+                  "description": "id"
+                }
+              ]
+            },
+            "description": "删除用户",
+            "header": []
+          },
+          "description": "删除用户"
+        }
+      ]
+    },
+    {
+      "name": "视频接口",
+      "item": [
+        {
+          "name": "获取所有视频",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "http://localhost:8088/video/all",
+              "protocol": "http",
+              "path": [
+                "video",
+                "all"
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [],
+              "variable": []
+            },
+            "description": "获取所有视频",
+            "header": []
+          },
+          "description": "获取所有视频"
+        },
+        {
+          "name": "根据 id 获取视频",
+          "request": {
+            "method": "GET",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "type": "text",
+                  "description": "id",
+                  "value": "171"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8088/video/?id\u003d171",
+              "protocol": "http",
+              "path": [
+                "video",
+                ""
+              ],
+              "host": [
+                "localhost"
+              ],
+              "port": "8088",
+              "query": [
+                {
+                  "key": "id",
+                  "value": "196",
+                  "description": "id"
+                }
+              ],
+              "variable": []
+            },
+            "description": "根据 id 获取视频",
+            "header": []
+          },
+          "description": "根据 id 获取视频"
+        }
+      ]
+    }
+  ]
+}
