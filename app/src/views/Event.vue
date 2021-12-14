@@ -65,7 +65,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import "../assets/css/jazz-timeline.css";
 :root {
   --bg-color: #10aec2;
 }

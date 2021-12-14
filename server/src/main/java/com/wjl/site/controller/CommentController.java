@@ -96,7 +96,7 @@ public class CommentController {
      *
      * @param commentSubmitDto comment
      */
-    @SaCheckLogin
+//    @SaCheckLogin
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public Object addComment(@RequestBody CommentSubmitDto commentSubmitDto) {
         if (commentService.addComment(commentSubmitDto)) {

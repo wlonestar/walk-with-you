@@ -9,7 +9,6 @@ import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
 import '../src/assets/css/global.css'
 import '../src/assets/css/index.css'
-import '../src/assets/css/jazz-timeline.css'
 
 createApp(App)
   .use(store)
